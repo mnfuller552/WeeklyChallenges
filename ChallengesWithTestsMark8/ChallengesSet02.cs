@@ -79,7 +79,9 @@ namespace ChallengesWithTestsMark8
             return numbers.Sum();
         }
 
+#pragma warning disable CA1822 // Mark members as static
         public int SumEvens(int[] numbers)
+#pragma warning restore CA1822 // Mark members as static
         {
             if (numbers == null)
             {
@@ -87,7 +89,7 @@ namespace ChallengesWithTestsMark8
             }
 
             var evenSum = 0;
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 0; i > numbers.Length; i++)
             {
                 if (numbers[i] % 2 == 0)
                 {

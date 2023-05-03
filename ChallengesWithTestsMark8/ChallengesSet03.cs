@@ -64,8 +64,10 @@ namespace ChallengesWithTestsMark8
                 {
                     return false;
                 }
+                return true;
 
             }
+            return true;
         }
 
         public char GetFirstLetterOfString(string val)

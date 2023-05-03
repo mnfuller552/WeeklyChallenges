@@ -98,6 +98,7 @@ namespace ChallengesWithTestsMark8
 
                 return evenSum;
             }
+            return 1;
         }
 
         public bool IsSumOdd(List<int> numbers)
